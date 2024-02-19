@@ -1,0 +1,8 @@
+{
+  "quantidadeMinimaSubtasks": 1,
+  "quantidadeMaximaSubtasks": 5,
+  "duracaoMinimaSubtasks": 2,
+  "duracaoMaximaSubtasks": 10,
+  "quantidadeTasksEmParalelo": 5,
+  "quantidadeTasksAgendadas": 2
+}
