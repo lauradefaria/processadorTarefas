@@ -11,7 +11,6 @@ O projeto tem como objetivo elaborar um sistema de processamento de tarefas. Nel
 - [Regras de Negocio](#regras-de-negocio)
 - [Requisitos](#requisitos)
 - [Clonar](#clonar)
-- [Autor](#autor)
 
 ---
 
@@ -41,41 +40,39 @@ Para a ordem das tarefas, elas devem seguir a máquina de estados da figura abai
 
 ## Interface
 
- EM DESENVOLVIMENTO
+ A partir da interface, o usuário pode optar por: Iniciar (inicia a execução das tarefas), Cancelar (cancela alguma tarefa pelo seu ID), Listar Ativas (Lista as tarefas ativas e sua descrição básica), Listar Inativas (Lista as tarefas inativas e sua descrição básica), Parar Listagem de Tarefas (não listará mais as tarefas), Criar (cria uma tarefa nova aleatória), Consultar (consulta uma tarefa especícifa pelo seu ID) ou Encerrar (finaliza o programa e pausa as tarefas em execução para continuar quando retornar).
 
 ---
 
 ## Dados
 
-EM DESENVOLVIMENTO
+As tarefas são criadas no início das configurações do programa. Além disso, os valores relacionados a `'quantidadeMinimaSubtasks'`, `'quantidadeMaximaSubtasks'`, `'duracaoMinimaSubtasks'`, `'duracaoMaximaSubtasks'`, `'quantidadeTarefasEmParalelo'` e `'quantidadeTarefasAgendadas'` podem ser alteradas no arquivo `settings.json` localizado no diretório **ConsoleUI**.
 
 ---
 
 ## Regras de Negocio
 
-- [ ] Criação, cancelamento e listaagem de tarefas ativas. <br/>
-- [ ] Listagem tarefas inativas. <br/>
-- [ ] Processamento de uma quantidade determinada de tarefas deve ocorrer em segundo plano.<br/>
-- [ ] Ao ser criada, a tarefa deve atribuir a si mesma um número aleatório de sub-tarefas entre 10 e 100.<br/>
-- [ ] O processamento de cada sub-tarefa deve levar entre 3 e 60 (gerar tempo aleatório ao criar).<br/>
-- [ ] Caso o sistema seja interrompido e o armazenamento for persistente, o sistema deve ser capaz de continuar a execução das tarefas de onde parou.<br/>
-- [ ] O armazenamento em memória deve conter estaticamente uma lista de 100 tarefas para ser trabalhada a cada execução.<br/>
+- [X] Criação, cancelamento e listaagem de tarefas ativas. <br/>
+- [X] Listagem tarefas inativas. <br/>
+- [X] Processamento de uma quantidade determinada de tarefas deve ocorrer em segundo plano.<br/>
+- [X] Ao ser criada, a tarefa deve atribuir a si mesma um número aleatório de sub-tarefas entre 10 e 100.<br/>
+- [X] O processamento de cada sub-tarefa deve levar entre 3 e 60 (gerar tempo aleatório ao criar).<br/>
+- [X] Caso o sistema seja interrompido e o armazenamento for persistente, o sistema deve ser capaz de continuar a execução das tarefas de onde parou.<br/>
+- [X] O armazenamento em memória deve conter estaticamente uma lista de 100 tarefas para ser trabalhada a cada execução.<br/>
 
 ## Requisitos
 
 **OBRIGATÓRIOS**
-- [ ] Injeção de dependência para repositórios e possíveis serviços.<br/>
-- [ ] Execução de tarefas deve ser assíncrona.<br/>
-- [ ] A implementação do repositório deve usar Generics.<br/>
-- [ ] Implementar a máquina de estado.<br/>
-- [ ] Permitir configurar: Quantidade de tarefas que podem ser executadas por vez.<br/>
-- [ ] Permitir configurar: Quantidade máxima de sub-tarefas que cada tarefa pode receber.<br/>
-- [ ] Permitir configurar: O tipo de armazenamento que será utilizado pela aplicação (em memória, sqlite ou sql server).<br/>
+- [X] Injeção de dependência para repositórios e possíveis serviços.<br/>
+- [X] Execução de tarefas deve ser assíncrona.<br/>
+- [X] A implementação do repositório deve usar Generics.<br/>
+- [X] Implementar a máquina de estado.<br/>
+- [X] Permitir configurar: Quantidade de tarefas que podem ser executadas por vez.<br/>
+- [X] Permitir configurar: Quantidade máxima de sub-tarefas que cada tarefa pode receber.<br/>
 
 **BÔNUS**
-- [ ] Implementar padrão de projeto State.<br/>
+- [X] Implementar padrão de projeto State.<br/>
 - [ ] Mostrar progresso das tarefas no console.<br/>
-- [ ] Permitir interagir com sistema tanto pela API quanto pelo console simultâneamente.<br/>
 
 
 ---
@@ -83,11 +80,4 @@ EM DESENVOLVIMENTO
 ## Clonar
 
 - Clone esse repositório na sua máquila local utilizando
-    > https://github.com/lauradefaria/GerenciadorTarefas.git
-
----
-## Autor
-|<a href="https://www.linkedin.com/in/lauradefaria/" target="_blank">**Laura de Faria**</a> | 
-|:-----------------------------------------------------------------------------------------:|
-|                   <img src="imgs/laura.png" width="200px"> </img>                            |
-|               <a href="http://github.com/lauradefaria" target="_blank">`github.com/lauradefaria`</a>      |
+    > https://github.com/lauradefaria/processadorTarefas.git
